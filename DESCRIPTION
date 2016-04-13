@@ -1,0 +1,15 @@
+Package: yagop
+Type: Package
+Title: Yet Another Gene Ontology Package
+Version: 0.1.0
+Author: Laurent Gatto
+Maintainer: Laurent Gatto <lg390@cam.ac.uk>
+Description: A simple and consistent interfaces to various tasks
+	     involving the Gene Ontology and Ontology terms
+	     manipulation.
+Imports: GO.db, RamiGO, topGO
+License: GPL-2
+VignetteBuilder: knitr
+URL: https://github.com/lgatto/yagop
+BugReports: https://github.com/yagop/pRoloc/issues
+biocViews: GO, Annotation
