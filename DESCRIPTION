@@ -5,11 +5,16 @@ Version: 0.1.0
 Author: Laurent Gatto
 Maintainer: Laurent Gatto <lg390@cam.ac.uk>
 Description: A simple and consistent interfaces to various tasks
-	     involving the Gene Ontology and Ontology terms
-	     manipulation.
-Imports: GO.db, RamiGO, topGO
+    involving the Gene Ontology and Ontology terms
+    manipulation.
+Imports:
+    GO.db,
+    RamiGO,
+    topGO
+Suggests:
+    testthat
 License: GPL-2
-VignetteBuilder: knitr
 URL: https://github.com/lgatto/yagop
 BugReports: https://github.com/yagop/pRoloc/issues
 biocViews: GO, Annotation
+RoxygenNote: 5.0.1

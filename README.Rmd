@@ -2,14 +2,9 @@
 
 ## Current functionality
 
-
-```r
+```{r yagop, message=FALSE}
 library("yagop")
 ls("package:yagop")
-```
-
-```
-## [1] "validGO"
 ```
 
 ## Anticipated functionality
@@ -18,8 +13,7 @@ Given a vector of GO ids, return a list of children, descendants,
 parents and ancestors. For example:
 
 
-
-```r
+```{r children, eval=FALSE}
 ##' @title Get the children of GO identifiers
 ##' @param x A \code{vector} of GO identifiers
 ##' @param simplify A \code{logical} of length 1 defining if the
@@ -42,12 +36,12 @@ children <- function(x, simplify = TRUE, namespace) {
     if (!missing(namespace))
         namespace <- match.arg(namspace)
 }
+
 ```
 
 Given a vector of GO ids, plots a GO sub-graph.
 
-
-```r
+```{r plotGO, eval=FALSE}
 ##' Plots a GO subgraph with all the \code{goids} of interest
 ##' up to the root of the ontology.
 ##'
