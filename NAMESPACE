@@ -2,4 +2,6 @@ import("GO.db")
 import("RamiGO")
 import("topGO")
 
-export(validGO)
+export(validGO,
+       goNamespace,
+       plotGO)

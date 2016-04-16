@@ -11,8 +11,7 @@ Imports:
     GO.db,
     RamiGO,
     topGO
-Suggests:
-    testthat
+Suggests: testthat, Rgraphviz
 License: GPL-2
 URL: https://github.com/lgatto/yagop
 BugReports: https://github.com/yagop/pRoloc/issues
