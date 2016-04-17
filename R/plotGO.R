@@ -13,7 +13,7 @@
 ##'     generating plots. When using \code{"RamiGO"}, a
 ##'     \code{character} containing the SVG code is invisibly
 ##'     returned. For \code{"Rgraphviz"}, the GO sub-graph is returned
-##'     as a \code{\link{graphNEL}} object.
+##'     as a \code{\link[graph]{graphNEL}} object.
 ##' @author Laurent Gatto
 ##' @export
 ##' @examples
@@ -35,7 +35,8 @@ plotGO <- function(goids,
              paste(uns, collapse = ", "), ".")
     use <- match.arg(use)
     if (use == "Rgraphviz") {
-        require("Rgraphviz") || stop("Rgraphviz is required. Alternatively use 'RamiGO'.")        
+        requireNamespace("Rgraphviz") || stop("Rgraphviz is required. Alternatively use 'RamiGO'.")
+        requireNamespace("graph") ## depends on Rgraphviz
         suppressMessages(topGO:::groupGOTerms(parent.frame()))
         gr <- topGO:::buildGOgraph.topology(goids, uns)
         graph::nodeRenderInfo(gr) <- list(fillcolor="transparent",

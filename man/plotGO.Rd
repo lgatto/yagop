@@ -25,7 +25,7 @@ This function is primarily used for its side effects of
     generating plots. When using \code{"RamiGO"}, a
     \code{character} containing the SVG code is invisibly
     returned. For \code{"Rgraphviz"}, the GO sub-graph is returned
-    as a \code{\link{graphNEL}} object.
+    as a \code{\link[graph]{graphNEL}} object.
 }
 \description{
 Plots a GO subgraph with all the \code{goids} of interest

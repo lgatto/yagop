@@ -2,6 +2,14 @@ import("GO.db")
 import("RamiGO")
 import("topGO")
 
+importFrom("graphics", "plot")
+importFrom("utils", "browseURL")
+
+
+## Namespace dependencies not required for suggested packages
+## importFrom("Rgraphviz", getDefaultAttrs, agopen)
+## importFrom("graph", nodeRenderInfo, edgeRenderInfo, nodes)
+
 export(validGO,
        goNamespace,
        plotGO)
