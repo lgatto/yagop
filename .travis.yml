@@ -26,6 +26,6 @@ after_script:
 
 notifications:
   email:
-    on_success: lg390@cam.ac.uk
-    on_failure: lg390@cam.ac.uk
+    on_success: change
+    on_failure: change
 
