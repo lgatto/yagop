@@ -25,9 +25,8 @@ install:
 # Adapt as necessary starting from here
 
 build_script:
-  - echo Current directory=%CD%
-  
-  - travis-tool.sh install_r testthat DBI
+  - echo Current directory=%CD%  
+  - travis-tool.sh install_r DBI testthat graph 
   - travis-tool.sh install_bioc GO.db RamiGO AnnotationDbi Rgraphviz
 
 test_script:
