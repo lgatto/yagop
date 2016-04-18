@@ -2,7 +2,11 @@
 
 [![Build Status](https://travis-ci.org/lgatto/yagop.svg?branch=master)](https://travis-ci.org/lgatto/yagop) [![codecov.io](https://codecov.io/github/lgatto/yagop/coverage.svg?branch=master)](https://codecov.io/github/lgatto/yagop?branch=master) [![Build status](https://ci.appveyor.com/api/projects/status/0ivhd6kgn7op23wj/branch/master?svg=true)](https://ci.appveyor.com/project/lgatto/yagop)
 
+A simple package for my recurrent GO manipulation needs.
+
 ## Current functionality
+
+See respective manuals for details.
 
 
 ```r
