@@ -1,4 +1,4 @@
-# Yet Another Gene Ontology Package [![Build Status](https://travis-ci.org/lgato/yagop.svg?branch=master)](https://travis-ci.org/lgatto/yagop)
+# Yet Another Gene Ontology Package [![Build Status](https://travis-ci.org/lgato/yagop.svg?branch=master)](https://travis-ci.org/lgatto/yagop) [![codecov.io](https://codecov.io/github/lgatto/yagop/coverage.svg?branch=master)](https://codecov.io/github/lgatto/yagop?branch=master)
 
 ## Current functionality
 
