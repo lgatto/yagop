@@ -19,13 +19,14 @@
 ##' @examples
 ##' goids <-c("GO:0005739", "GO:0005773", "GO:0005783", "GO:0032588")
 ##' plotGO(goids)
+##' plotGO(goids, use = "Rgraphviz")
 plotGO <- function(goids,
                    use = c("RamiGO", "Rgraphviz"),
                    showPlot = TRUE,
-                   params = list(
-                       namespace="CC", edge.labels=TRUE, ## rgraphviz
-                       color="#8FBDDAFF", filename="gotree", picType="svg" ## ramigo
-                   )) {
+                   params = list(edge.labels=TRUE, ## rgraphviz
+                                 color="#8FBDDAFF", filename="gotree",
+                                 picType="svg" ## ramigo
+                                 )) {
     ns <- goNamespace(goids)
     for (i in seq_along(goids))
         stopifnot(validGO(goids[i], ns[i]))
@@ -37,8 +38,7 @@ plotGO <- function(goids,
     if (use == "Rgraphviz") {
         requireNamespace("Rgraphviz") || stop("Rgraphviz is required. Alternatively use 'RamiGO'.")
         requireNamespace("graph") ## depends on Rgraphviz
-        suppressMessages(topGO:::groupGOTerms(parent.frame()))
-        gr <- topGO:::buildGOgraph.topology(goids, uns)
+        gr <- buildGOgraph(goids, uns)
         graph::nodeRenderInfo(gr) <- list(fillcolor="transparent",
                                           shape="ellipse")
         graph::nodeRenderInfo(gr)$fillcolor[graph::nodes(gr) %in% goids] <- "#8FBDDAFF"
@@ -67,7 +67,7 @@ plotGO <- function(goids,
                                  nodeAttrs = graph::nodeRenderInfo(gr),
                                  edgeAttrs = graph::edgeRenderInfo(gr))
         if (showPlot)
-            plot(res)
+            graph::plot(res)
         invisible(gr)
     } else { ## RamiGO
         res <- RamiGO::getAmigoTree(goIDs = goids,

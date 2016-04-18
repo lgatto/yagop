@@ -7,7 +7,7 @@ Maintainer: Laurent Gatto <lg390@cam.ac.uk>
 Description: A simple and consistent interfaces to various tasks
     involving the Gene Ontology and Ontology terms
     manipulation.
-Imports: GO.db, RamiGO, topGO, graphics, utils
+Imports: GO.db, RamiGO, AnnotationDbi, graphics, utils
 Suggests: testthat, Rgraphviz, graph
 License: GPL-2
 URL: https://github.com/lgatto/yagop

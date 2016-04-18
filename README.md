@@ -9,7 +9,7 @@ ls("package:yagop")
 ```
 
 ```
-## [1] "validGO"
+## [1] "goNamespace" "plotGO"      "validGO"
 ```
 
 ## Anticipated functionality

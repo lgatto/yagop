@@ -5,8 +5,8 @@
 \title{Plots a GO sub-graph}
 \usage{
 plotGO(goids, use = c("RamiGO", "Rgraphviz"), showPlot = TRUE,
-  params = list(namespace = "CC", edge.labels = TRUE, color = "#8FBDDAFF",
-  filename = "gotree", picType = "svg"))
+  params = list(edge.labels = TRUE, color = "#8FBDDAFF", filename = "gotree",
+  picType = "svg"))
 }
 \arguments{
 \item{goids}{A \code{character} vector of GO identifiers.}
@@ -34,6 +34,7 @@ up to the root of the ontology.
 \examples{
 goids <-c("GO:0005739", "GO:0005773", "GO:0005783", "GO:0032588")
 plotGO(goids)
+plotGO(goids, use = "Rgraphviz")
 }
 \author{
 Laurent Gatto

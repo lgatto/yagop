@@ -1,9 +1,10 @@
 import("GO.db")
 import("RamiGO")
-import("topGO")
 
+importFrom("AnnotationDbi", "revmap", "as.list")
 importFrom("graphics", "plot")
 importFrom("utils", "browseURL")
+
 
 
 ## Namespace dependencies not required for suggested packages
