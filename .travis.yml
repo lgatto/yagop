@@ -12,6 +12,9 @@ bioc_packages:
   - AnnotationDbi
   - Rgraphviz
 
+r_packages:
+  - DBI
+  
 after_success:
   - Rscript -e 'covr::codecov()'
 

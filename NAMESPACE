@@ -2,6 +2,7 @@ import("GO.db")
 import("RamiGO")
 
 importFrom("AnnotationDbi", "revmap", "as.list")
+importFrom("DBI", "dbGetQuery")
 importFrom("graphics", "plot")
 importFrom("utils", "browseURL")
 
