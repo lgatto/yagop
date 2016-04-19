@@ -15,7 +15,7 @@ ls("package:yagop")
 ```
 
 ```
-## [1] "goNamespace" "plotGO"      "validGO"
+## [1] "goNamespace" "plotGO"      "searchGO"    "validGO"
 ```
 
 ## Anticipated functionality
