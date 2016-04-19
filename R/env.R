@@ -12,14 +12,14 @@ prepareGOTermsInEnv <- function() {
     }
 }
 
-GOCCTerms <- function() yagopEnv$GOCCTERM
-GOCCList <- function() as.list(GOCCTerms())
+## GOCCTerms <- function() yagopEnv$GOCCTERM
+## GOCCList <- function() as.list(GOCCTerms())
 
-GOMFTerms <- function() yagopEnv$GOMFTERM
-GOMFList <- function() as.list(GOMFTerms())
+## GOMFTerms <- function() yagopEnv$GOMFTERM
+## GOMFList <- function() as.list(GOMFTerms())
 
-GOBPTerms <- function() yagopEnv$GOBPTERM
-GOBPList <- function() as.list(GOBPTerms())
+## GOBPTerms <- function() yagopEnv$GOBPTERM
+## GOBPList <- function() as.list(GOBPTerms())
 
 GOTerms <- function() GO.db::GOTERM
-GOList <- function() as.list(GOTerms())
+## GOList <- function() as.list(GOTerms())
