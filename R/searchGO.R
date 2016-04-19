@@ -71,7 +71,5 @@ searchGO <- function(pattern,
             if (i != 0) ans <- ans[i] ## 0 to exit from menu
         }
     }
-    ans <- GOID(ans)
-    names(ans) <- NULL
-    ans
+    keys(ans)
 }

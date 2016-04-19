@@ -1,10 +1,11 @@
 import("GO.db")
 import("RamiGO")
 
-importFrom("AnnotationDbi", "revmap", "as.list")
+importFrom("AnnotationDbi", "revmap", "as.list", "GOID", "Term",
+           "Synonym", "Ontology", "keys")
 importFrom("DBI", "dbGetQuery")
 importFrom("graphics", "plot")
-importFrom("utils", "browseURL", "packageVersion")
+importFrom("utils", "browseURL", "packageVersion", "menu")
 
 
 
