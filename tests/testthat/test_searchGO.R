@@ -10,4 +10,6 @@ test_that("searchGO function", {
     expect_null(xmf)
     x <- searchGO("Golgi apparatus", interactive = i)
     expect_identical(sort(x), sort(c(xcc, xmf, xbp)))
+    expect_warning(x2 <- searchGO(c("Golgi apparatus", "ignored"), interactive = i))
+    expect_identical(x, x2)
 })
