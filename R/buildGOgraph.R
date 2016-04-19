@@ -1,7 +1,6 @@
-## Copied and adapted from topGO 
+## Copied and adapted from topGO:::buildGOgraph.topology
 buildGOgraph <- function (knownNodes, ns, where = yagopEnv) {
     nodeLookUp <- new.env(hash = TRUE, parent = emptyenv())
-    GOOTerm <- get(paste("GO", ns, "TERM", sep = ""), envir = where)
     isNodeInDAG <- function(node) {
         return(exists(node, envir = nodeLookUp,
                       mode = "logical", inherits = FALSE))
