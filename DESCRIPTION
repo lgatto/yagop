@@ -11,6 +11,6 @@ Imports: GO.db, RamiGO, AnnotationDbi, graphics, utils, DBI
 Suggests: testthat, Rgraphviz, graph
 License: GPL-2
 URL: https://github.com/lgatto/yagop
-BugReports: https://github.com/yagop/pRoloc/issues
+BugReports: https://github.com/yagop/issues
 biocViews: GO, Annotation
 RoxygenNote: 5.0.1
