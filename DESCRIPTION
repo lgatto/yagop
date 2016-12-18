@@ -2,6 +2,9 @@ Package: yagop
 Type: Package
 Title: Yet Another Gene Ontology Package
 Version: 0.1.0
+Authors@R: person(given = "Laurent", family = "Gatto",
+	          email = "lg390@cam.ac.uk",
+ 	 	  role = c("aut","cre"))
 Author: Laurent Gatto
 Maintainer: Laurent Gatto <lg390@cam.ac.uk>
 Description: A simple and consistent interfaces to various tasks
